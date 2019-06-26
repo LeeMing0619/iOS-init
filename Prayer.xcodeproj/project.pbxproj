@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44CED42880E63FE2E1E3E4F7 /* Pods_Prayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF7D394EBA391C66E84897F /* Pods_Prayer.framework */; };
+		E20C617E1D3A9EBB00D9FFBF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C617D1D3A9EBB00D9FFBF /* WelcomeViewController.swift */; };
+		E20C61831D3AC7A800D9FFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20C61811D3AC7A800D9FFBF /* Main.storyboard */; };
+		E20C61861D3ACA0400D9FFBF /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C61851D3ACA0400D9FFBF /* ReplaceSegue.swift */; };
+		E213EC251D4FB55400E94761 /* FNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213EC241D4FB55400E94761 /* FNotification.swift */; };
+		E213EC271D4FB81600E94761 /* FNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213EC261D4FB81600E94761 /* FNotificationHelper.swift */; };
+		E230D2C01D4A20EE00F5D020 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230D2BF1D4A20EE00F5D020 /* UserTableViewCell.swift */; };
+		E230D2C21D4A5BC300F5D020 /* CircleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230D2C11D4A5BC300F5D020 /* CircleTableViewCell.swift */; };
+		E23859EE1D4144B90095B896 /* FPray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23859ED1D4144B90095B896 /* FPray.swift */; };
+		E24D5C4C1D40E5820050ADE5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24D5C4B1D40E5820050ADE5 /* UIImage+Extension.swift */; };
+		E24D5C4E1D4108DC0050ADE5 /* FPrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24D5C4D1D4108DC0050ADE5 /* FPrayHelper.swift */; };
+		E24D5C501D4109180050ADE5 /* FCircleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24D5C4F1D4109180050ADE5 /* FCircleHelper.swift */; };
+		E24D5C521D4109370050ADE5 /* FChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24D5C511D4109370050ADE5 /* FChatHelper.swift */; };
+		E26762491D392B2F004C689E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26762481D392B2F004C689E /* SignInViewController.swift */; };
+		E267624B1D392B37004C689E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267624A1D392B37004C689E /* SignUpViewController.swift */; };
+		E267624F1D392B7B004C689E /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267624E1D392B7B004C689E /* RequestsViewController.swift */; };
+		E26762531D392B8D004C689E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26762521D392B8D004C689E /* MessagesViewController.swift */; };
+		E26762551D392B95004C689E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26762541D392B95004C689E /* NotificationsViewController.swift */; };
+		E26762571D392BA1004C689E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26762561D392BA1004C689E /* ProfileViewController.swift */; };
+		E26762591D392D78004C689E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26762581D392D78004C689E /* Manager.swift */; };
+		E267625B1D393057004C689E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267625A1D393057004C689E /* Utils.swift */; };
+		E27D1CA21D400BCC00A8ADBB /* NewPrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D1CA11D400BCC00A8ADBB /* NewPrayViewController.swift */; };
+		E27D1CA41D400BDA00A8ADBB /* SharePrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D1CA31D400BDA00A8ADBB /* SharePrayViewController.swift */; };
+		E2849FD31D507EEF00D6D258 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2849FD21D507EEF00D6D258 /* NotificationTableViewCell.swift */; };
+		E2849FD51D50B5B400D6D258 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2849FD41D50B5B400D6D258 /* ChatTableViewCell.swift */; };
+		E2849FD71D50B6A700D6D258 /* FChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2849FD61D50B6A700D6D258 /* FChatItem.swift */; };
+		E286B7C71D4B8F2700EAC495 /* SharePrayToCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286B7C61D4B8F2700EAC495 /* SharePrayToCell.swift */; };
+		E29A02F01D42519900BC7DA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A02EF1D42519900BC7DA2 /* BaseViewController.swift */; };
+		E29BBF751D41B615004FAF5B /* PrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29BBF741D41B615004FAF5B /* PrayTableViewCell.swift */; };
+		E2AA07671D3D207800F0DF26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA07661D3D207800F0DF26 /* Constants.swift */; };
+		E2AA076E1D3D256000F0DF26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2AA076D1D3D256000F0DF26 /* GoogleService-Info.plist */; };
+		E2AA077E1D3D2D6E00F0DF26 /* FObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA077C1D3D2D6E00F0DF26 /* FObject.swift */; };
+		E2AA077F1D3D2D6E00F0DF26 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA077D1D3D2D6E00F0DF26 /* FUser.swift */; };
+		E2ADC43D1D5E2B7E00CA0F2D /* PrayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADC43C1D5E2B7E00CA0F2D /* PrayDetailViewController.swift */; };
+		E2ADC43F1D5E430500CA0F2D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADC43E1D5E430500CA0F2D /* CommentCell.swift */; };
+		E2B0AC751D47B79800F2896C /* FCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0AC741D47B79800F2896C /* FCircle.swift */; };
+		E2B0AC781D47EBDD00F2896C /* CircleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0AC771D47EBDD00F2896C /* CircleListViewController.swift */; };
+		E2B0AC7A1D47EC0200F2896C /* CircleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0AC791D47EC0200F2896C /* CircleDetailViewController.swift */; };
+		E2B0AC7D1D47EC3300F2896C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0AC7C1D47EC3300F2896C /* UsersViewController.swift */; };
+		E2B0AC7F1D47EDD800F2896C /* CreateCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0AC7E1D47EDD800F2896C /* CreateCircleViewController.swift */; };
+		E2B48EA51D51D774007F7F5F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B48EA41D51D774007F7F5F /* ChatViewController.swift */; };
+		E2C21DC71D5D241E006821DF /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C21DC61D5D241E006821DF /* DatePickerDialog.swift */; };
+		E2D380AA1D5B5D6A002668A2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D380A91D5B5D6A002668A2 /* Social.framework */; };
+		E2D380AC1D5B99C4002668A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D380AB1D5B99C4002668A2 /* Assets.xcassets */; };
+		E2D380C01D5BBE05002668A2 /* PrayInProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D380BF1D5BBE05002668A2 /* PrayInProfileTableViewCell.swift */; };
+		E2DFA9021D37575800B00FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DFA9011D37575800B00FA5 /* AppDelegate.swift */; };
+		E2DFA90E1D37575800B00FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DFA90C1D37575800B00FA5 /* LaunchScreen.storyboard */; };
+		E2DFA9191D37575800B00FA5 /* PrayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DFA9181D37575800B00FA5 /* PrayerTests.swift */; };
+		E2DFA9241D37575800B00FA5 /* PrayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DFA9231D37575800B00FA5 /* PrayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2DFA9151D37575800B00FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2DFA8F61D37575700B00FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2DFA8FD1D37575800B00FA5;
+			remoteInfo = Prayer;
+		};
+		E2DFA9201D37575800B00FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2DFA8F61D37575700B00FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2DFA8FD1D37575800B00FA5;
+			remoteInfo = Prayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EF7D394EBA391C66E84897F /* Pods_Prayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C448C6A7379E6A5564B6315D /* Pods-Prayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prayer/Pods-Prayer.release.xcconfig"; sourceTree = "<group>"; };
+		D66CEA05CCF3652AC9B52242 /* Pods-Prayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prayer/Pods-Prayer.debug.xcconfig"; sourceTree = "<group>"; };
+		E20C617D1D3A9EBB00D9FFBF /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E20C61821D3AC7A800D9FFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E20C61851D3ACA0400D9FFBF /* ReplaceSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
+		E213EC241D4FB55400E94761 /* FNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNotification.swift; sourceTree = "<group>"; };
+		E213EC261D4FB81600E94761 /* FNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNotificationHelper.swift; sourceTree = "<group>"; };
+		E230D2BF1D4A20EE00F5D020 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		E230D2C11D4A5BC300F5D020 /* CircleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTableViewCell.swift; sourceTree = "<group>"; };
+		E23859ED1D4144B90095B896 /* FPray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPray.swift; sourceTree = "<group>"; };
+		E24D5C4B1D40E5820050ADE5 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		E24D5C4D1D4108DC0050ADE5 /* FPrayHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPrayHelper.swift; sourceTree = "<group>"; };
+		E24D5C4F1D4109180050ADE5 /* FCircleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCircleHelper.swift; sourceTree = "<group>"; };
+		E24D5C511D4109370050ADE5 /* FChatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FChatHelper.swift; sourceTree = "<group>"; };
+		E26762481D392B2F004C689E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E267624A1D392B37004C689E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E267624E1D392B7B004C689E /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		E26762521D392B8D004C689E /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		E26762541D392B95004C689E /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E26762561D392BA1004C689E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E26762581D392D78004C689E /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		E267625A1D393057004C689E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E27D1CA11D400BCC00A8ADBB /* NewPrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPrayViewController.swift; sourceTree = "<group>"; };
+		E27D1CA31D400BDA00A8ADBB /* SharePrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePrayViewController.swift; sourceTree = "<group>"; };
+		E2849FD21D507EEF00D6D258 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		E2849FD41D50B5B400D6D258 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		E2849FD61D50B6A700D6D258 /* FChatItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FChatItem.swift; sourceTree = "<group>"; };
+		E286B7C61D4B8F2700EAC495 /* SharePrayToCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePrayToCell.swift; sourceTree = "<group>"; };
+		E29A02EF1D42519900BC7DA2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E29BBF741D41B615004FAF5B /* PrayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayTableViewCell.swift; sourceTree = "<group>"; };
+		E2AA07661D3D207800F0DF26 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E2AA076D1D3D256000F0DF26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2AA077C1D3D2D6E00F0DF26 /* FObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FObject.swift; sourceTree = "<group>"; };
+		E2AA077D1D3D2D6E00F0DF26 /* FUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		E2ADC43C1D5E2B7E00CA0F2D /* PrayDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayDetailViewController.swift; sourceTree = "<group>"; };
+		E2ADC43E1D5E430500CA0F2D /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		E2B0AC741D47B79800F2896C /* FCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCircle.swift; sourceTree = "<group>"; };
+		E2B0AC771D47EBDD00F2896C /* CircleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleListViewController.swift; sourceTree = "<group>"; };
+		E2B0AC791D47EC0200F2896C /* CircleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleDetailViewController.swift; sourceTree = "<group>"; };
+		E2B0AC7C1D47EC3300F2896C /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		E2B0AC7E1D47EDD800F2896C /* CreateCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCircleViewController.swift; sourceTree = "<group>"; };
+		E2B48EA41D51D774007F7F5F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E2C21DC61D5D241E006821DF /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		E2D380A91D5B5D6A002668A2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E2D380AB1D5B99C4002668A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2D380BF1D5BBE05002668A2 /* PrayInProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayInProfileTableViewCell.swift; sourceTree = "<group>"; };
+		E2DFA8FE1D37575800B00FA5 /* Prayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DFA9011D37575800B00FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2DFA90D1D37575800B00FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2DFA90F1D37575800B00FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DFA9141D37575800B00FA5 /* PrayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DFA9181D37575800B00FA5 /* PrayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTests.swift; sourceTree = "<group>"; };
+		E2DFA91A1D37575800B00FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DFA91F1D37575800B00FA5 /* PrayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DFA9231D37575800B00FA5 /* PrayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerUITests.swift; sourceTree = "<group>"; };
+		E2DFA9251D37575800B00FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2DFA8FB1D37575800B00FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D380AA1D5B5D6A002668A2 /* Social.framework in Frameworks */,
+				44CED42880E63FE2E1E3E4F7 /* Pods_Prayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA9111D37575800B00FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA91C1D37575800B00FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51D5C2D153570A91B23938AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D380A91D5B5D6A002668A2 /* Social.framework */,
+				4EF7D394EBA391C66E84897F /* Pods_Prayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA3F21AFC519BD3BA2F2A97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D66CEA05CCF3652AC9B52242 /* Pods-Prayer.debug.xcconfig */,
+				C448C6A7379E6A5564B6315D /* Pods-Prayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E20C617C1D3A9EA600D9FFBF /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E20C617D1D3A9EBB00D9FFBF /* WelcomeViewController.swift */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		E20C61841D3AC9ED00D9FFBF /* ReplaceSegue */ = {
+			isa = PBXGroup;
+			children = (
+				E20C61851D3ACA0400D9FFBF /* ReplaceSegue.swift */,
+			);
+			name = ReplaceSegue;
+			sourceTree = "<group>";
+		};
+		E26762421D392A90004C689E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E2D380AB1D5B99C4002668A2 /* Assets.xcassets */,
+				E2AA076D1D3D256000F0DF26 /* GoogleService-Info.plist */,
+				E2DFA9011D37575800B00FA5 /* AppDelegate.swift */,
+				E2DFA90C1D37575800B00FA5 /* LaunchScreen.storyboard */,
+				E2DFA90F1D37575800B00FA5 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		E26762431D392AAC004C689E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E20C61811D3AC7A800D9FFBF /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		E26762441D392B12004C689E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2B48EA31D51D744007F7F5F /* Chat */,
+				E2B0AC7B1D47EC2700F2896C /* Users */,
+				E2B0AC761D47EBC400F2896C /* Circle */,
+				E27D1C9E1D400B9100A8ADBB /* Pray */,
+				E20C617C1D3A9EA600D9FFBF /* Welcome */,
+				E267624C1D392B46004C689E /* AuthViewControllers */,
+				E267624D1D392B55004C689E /* InTabViewControllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26762451D392B12004C689E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E24D5C4B1D40E5820050ADE5 /* UIImage+Extension.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		E26762461D392B12004C689E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA076A1D3D252400F0DF26 /* Firebase */,
+				E26762581D392D78004C689E /* Manager.swift */,
+				E267625A1D393057004C689E /* Utils.swift */,
+				E2AA07661D3D207800F0DF26 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26762471D392B12004C689E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2C21DC61D5D241E006821DF /* DatePickerDialog.swift */,
+				E29BBF731D41B600004FAF5B /* TableViewCell */,
+				E20C61841D3AC9ED00D9FFBF /* ReplaceSegue */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E267624C1D392B46004C689E /* AuthViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E26762481D392B2F004C689E /* SignInViewController.swift */,
+				E267624A1D392B37004C689E /* SignUpViewController.swift */,
+			);
+			name = AuthViewControllers;
+			sourceTree = "<group>";
+		};
+		E267624D1D392B55004C689E /* InTabViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E29A02EF1D42519900BC7DA2 /* BaseViewController.swift */,
+				E267624E1D392B7B004C689E /* RequestsViewController.swift */,
+				E26762521D392B8D004C689E /* MessagesViewController.swift */,
+				E26762541D392B95004C689E /* NotificationsViewController.swift */,
+				E26762561D392BA1004C689E /* ProfileViewController.swift */,
+			);
+			name = InTabViewControllers;
+			sourceTree = "<group>";
+		};
+		E27D1C9E1D400B9100A8ADBB /* Pray */ = {
+			isa = PBXGroup;
+			children = (
+				E27D1CA11D400BCC00A8ADBB /* NewPrayViewController.swift */,
+				E27D1CA31D400BDA00A8ADBB /* SharePrayViewController.swift */,
+				E2ADC43C1D5E2B7E00CA0F2D /* PrayDetailViewController.swift */,
+			);
+			name = Pray;
+			sourceTree = "<group>";
+		};
+		E29BBF731D41B600004FAF5B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2ADC43E1D5E430500CA0F2D /* CommentCell.swift */,
+				E2D380BF1D5BBE05002668A2 /* PrayInProfileTableViewCell.swift */,
+				E29BBF741D41B615004FAF5B /* PrayTableViewCell.swift */,
+				E230D2BF1D4A20EE00F5D020 /* UserTableViewCell.swift */,
+				E230D2C11D4A5BC300F5D020 /* CircleTableViewCell.swift */,
+				E286B7C61D4B8F2700EAC495 /* SharePrayToCell.swift */,
+				E2849FD21D507EEF00D6D258 /* NotificationTableViewCell.swift */,
+				E2849FD41D50B5B400D6D258 /* ChatTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E2AA076A1D3D252400F0DF26 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA077C1D3D2D6E00F0DF26 /* FObject.swift */,
+				E2AA077D1D3D2D6E00F0DF26 /* FUser.swift */,
+				E23859ED1D4144B90095B896 /* FPray.swift */,
+				E24D5C4D1D4108DC0050ADE5 /* FPrayHelper.swift */,
+				E2B0AC741D47B79800F2896C /* FCircle.swift */,
+				E24D5C4F1D4109180050ADE5 /* FCircleHelper.swift */,
+				E213EC241D4FB55400E94761 /* FNotification.swift */,
+				E213EC261D4FB81600E94761 /* FNotificationHelper.swift */,
+				E2849FD61D50B6A700D6D258 /* FChatItem.swift */,
+				E24D5C511D4109370050ADE5 /* FChatHelper.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E2B0AC761D47EBC400F2896C /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0AC771D47EBDD00F2896C /* CircleListViewController.swift */,
+				E2B0AC791D47EC0200F2896C /* CircleDetailViewController.swift */,
+				E2B0AC7E1D47EDD800F2896C /* CreateCircleViewController.swift */,
+			);
+			name = Circle;
+			sourceTree = "<group>";
+		};
+		E2B0AC7B1D47EC2700F2896C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0AC7C1D47EC3300F2896C /* UsersViewController.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		E2B48EA31D51D744007F7F5F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E2B48EA41D51D774007F7F5F /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		E2DFA8F51D37575700B00FA5 = {
+			isa = PBXGroup;
+			children = (
+				E2DFA9001D37575800B00FA5 /* Prayer */,
+				E2DFA9171D37575800B00FA5 /* PrayerTests */,
+				E2DFA9221D37575800B00FA5 /* PrayerUITests */,
+				E2DFA8FF1D37575800B00FA5 /* Products */,
+				BFA3F21AFC519BD3BA2F2A97 /* Pods */,
+				51D5C2D153570A91B23938AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2DFA8FF1D37575800B00FA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFA8FE1D37575800B00FA5 /* Prayer.app */,
+				E2DFA9141D37575800B00FA5 /* PrayerTests.xctest */,
+				E2DFA91F1D37575800B00FA5 /* PrayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2DFA9001D37575800B00FA5 /* Prayer */ = {
+			isa = PBXGroup;
+			children = (
+				E26762451D392B12004C689E /* Library */,
+				E26762471D392B12004C689E /* View */,
+				E26762461D392B12004C689E /* Model */,
+				E26762441D392B12004C689E /* Controller */,
+				E26762421D392A90004C689E /* Application */,
+				E26762431D392AAC004C689E /* Storyboard */,
+			);
+			path = Prayer;
+			sourceTree = "<group>";
+		};
+		E2DFA9171D37575800B00FA5 /* PrayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFA9181D37575800B00FA5 /* PrayerTests.swift */,
+				E2DFA91A1D37575800B00FA5 /* Info.plist */,
+			);
+			path = PrayerTests;
+			sourceTree = "<group>";
+		};
+		E2DFA9221D37575800B00FA5 /* PrayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFA9231D37575800B00FA5 /* PrayerUITests.swift */,
+				E2DFA9251D37575800B00FA5 /* Info.plist */,
+			);
+			path = PrayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2DFA8FD1D37575800B00FA5 /* Prayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2DFA9281D37575800B00FA5 /* Build configuration list for PBXNativeTarget "Prayer" */;
+			buildPhases = (
+				6E91245F2A1FA12355CFA3C9 /* [CP] Check Pods Manifest.lock */,
+				E2DFA8FA1D37575800B00FA5 /* Sources */,
+				E2DFA8FB1D37575800B00FA5 /* Frameworks */,
+				E2DFA8FC1D37575800B00FA5 /* Resources */,
+				757B08109856A866D0FB6441 /* [CP] Embed Pods Frameworks */,
+				182A9126037E259EFCEC4DF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prayer;
+			productName = Prayer;
+			productReference = E2DFA8FE1D37575800B00FA5 /* Prayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2DFA9131D37575800B00FA5 /* PrayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2DFA92B1D37575800B00FA5 /* Build configuration list for PBXNativeTarget "PrayerTests" */;
+			buildPhases = (
+				E2DFA9101D37575800B00FA5 /* Sources */,
+				E2DFA9111D37575800B00FA5 /* Frameworks */,
+				E2DFA9121D37575800B00FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2DFA9161D37575800B00FA5 /* PBXTargetDependency */,
+			);
+			name = PrayerTests;
+			productName = PrayerTests;
+			productReference = E2DFA9141D37575800B00FA5 /* PrayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2DFA91E1D37575800B00FA5 /* PrayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2DFA92E1D37575800B00FA5 /* Build configuration list for PBXNativeTarget "PrayerUITests" */;
+			buildPhases = (
+				E2DFA91B1D37575800B00FA5 /* Sources */,
+				E2DFA91C1D37575800B00FA5 /* Frameworks */,
+				E2DFA91D1D37575800B00FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2DFA9211D37575800B00FA5 /* PBXTargetDependency */,
+			);
+			name = PrayerUITests;
+			productName = PrayerUITests;
+			productReference = E2DFA91F1D37575800B00FA5 /* PrayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2DFA8F61D37575700B00FA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jessup;
+				TargetAttributes = {
+					E2DFA8FD1D37575800B00FA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E2DFA9131D37575800B00FA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E2DFA8FD1D37575800B00FA5;
+					};
+					E2DFA91E1D37575800B00FA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E2DFA8FD1D37575800B00FA5;
+					};
+				};
+			};
+			buildConfigurationList = E2DFA8F91D37575700B00FA5 /* Build configuration list for PBXProject "Prayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2DFA8F51D37575700B00FA5;
+			productRefGroup = E2DFA8FF1D37575800B00FA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2DFA8FD1D37575800B00FA5 /* Prayer */,
+				E2DFA9131D37575800B00FA5 /* PrayerTests */,
+				E2DFA91E1D37575800B00FA5 /* PrayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2DFA8FC1D37575800B00FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20C61831D3AC7A800D9FFBF /* Main.storyboard in Resources */,
+				E2AA076E1D3D256000F0DF26 /* GoogleService-Info.plist in Resources */,
+				E2D380AC1D5B99C4002668A2 /* Assets.xcassets in Resources */,
+				E2DFA90E1D37575800B00FA5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA9121D37575800B00FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA91D1D37575800B00FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182A9126037E259EFCEC4DF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prayer/Pods-Prayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E91245F2A1FA12355CFA3C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		757B08109856A866D0FB6441 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prayer/Pods-Prayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2DFA8FA1D37575800B00FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24D5C521D4109370050ADE5 /* FChatHelper.swift in Sources */,
+				E2AA077F1D3D2D6E00F0DF26 /* FUser.swift in Sources */,
+				E213EC271D4FB81600E94761 /* FNotificationHelper.swift in Sources */,
+				E26762531D392B8D004C689E /* MessagesViewController.swift in Sources */,
+				E2B0AC781D47EBDD00F2896C /* CircleListViewController.swift in Sources */,
+				E2ADC43D1D5E2B7E00CA0F2D /* PrayDetailViewController.swift in Sources */,
+				E20C61861D3ACA0400D9FFBF /* ReplaceSegue.swift in Sources */,
+				E2B0AC7A1D47EC0200F2896C /* CircleDetailViewController.swift in Sources */,
+				E27D1CA21D400BCC00A8ADBB /* NewPrayViewController.swift in Sources */,
+				E20C617E1D3A9EBB00D9FFBF /* WelcomeViewController.swift in Sources */,
+				E230D2C21D4A5BC300F5D020 /* CircleTableViewCell.swift in Sources */,
+				E286B7C71D4B8F2700EAC495 /* SharePrayToCell.swift in Sources */,
+				E267624B1D392B37004C689E /* SignUpViewController.swift in Sources */,
+				E2AA077E1D3D2D6E00F0DF26 /* FObject.swift in Sources */,
+				E24D5C4E1D4108DC0050ADE5 /* FPrayHelper.swift in Sources */,
+				E27D1CA41D400BDA00A8ADBB /* SharePrayViewController.swift in Sources */,
+				E26762491D392B2F004C689E /* SignInViewController.swift in Sources */,
+				E230D2C01D4A20EE00F5D020 /* UserTableViewCell.swift in Sources */,
+				E267624F1D392B7B004C689E /* RequestsViewController.swift in Sources */,
+				E24D5C501D4109180050ADE5 /* FCircleHelper.swift in Sources */,
+				E26762551D392B95004C689E /* NotificationsViewController.swift in Sources */,
+				E2B0AC7D1D47EC3300F2896C /* UsersViewController.swift in Sources */,
+				E2849FD51D50B5B400D6D258 /* ChatTableViewCell.swift in Sources */,
+				E2B48EA51D51D774007F7F5F /* ChatViewController.swift in Sources */,
+				E2849FD31D507EEF00D6D258 /* NotificationTableViewCell.swift in Sources */,
+				E267625B1D393057004C689E /* Utils.swift in Sources */,
+				E26762571D392BA1004C689E /* ProfileViewController.swift in Sources */,
+				E213EC251D4FB55400E94761 /* FNotification.swift in Sources */,
+				E29BBF751D41B615004FAF5B /* PrayTableViewCell.swift in Sources */,
+				E2D380C01D5BBE05002668A2 /* PrayInProfileTableViewCell.swift in Sources */,
+				E2C21DC71D5D241E006821DF /* DatePickerDialog.swift in Sources */,
+				E2AA07671D3D207800F0DF26 /* Constants.swift in Sources */,
+				E2849FD71D50B6A700D6D258 /* FChatItem.swift in Sources */,
+				E26762591D392D78004C689E /* Manager.swift in Sources */,
+				E2B0AC751D47B79800F2896C /* FCircle.swift in Sources */,
+				E2B0AC7F1D47EDD800F2896C /* CreateCircleViewController.swift in Sources */,
+				E29A02F01D42519900BC7DA2 /* BaseViewController.swift in Sources */,
+				E23859EE1D4144B90095B896 /* FPray.swift in Sources */,
+				E24D5C4C1D40E5820050ADE5 /* UIImage+Extension.swift in Sources */,
+				E2DFA9021D37575800B00FA5 /* AppDelegate.swift in Sources */,
+				E2ADC43F1D5E430500CA0F2D /* CommentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA9101D37575800B00FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DFA9191D37575800B00FA5 /* PrayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DFA91B1D37575800B00FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DFA9241D37575800B00FA5 /* PrayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2DFA9161D37575800B00FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2DFA8FD1D37575800B00FA5 /* Prayer */;
+			targetProxy = E2DFA9151D37575800B00FA5 /* PBXContainerItemProxy */;
+		};
+		E2DFA9211D37575800B00FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2DFA8FD1D37575800B00FA5 /* Prayer */;
+			targetProxy = E2DFA9201D37575800B00FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E20C61811D3AC7A800D9FFBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20C61821D3AC7A800D9FFBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2DFA90C1D37575800B00FA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2DFA90D1D37575800B00FA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2DFA9261D37575800B00FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2DFA9271D37575800B00FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2DFA9291D37575800B00FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66CEA05CCF3652AC9B52242 /* Pods-Prayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Prayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2DFA92A1D37575800B00FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C448C6A7379E6A5564B6315D /* Pods-Prayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Prayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		E2DFA92C1D37575800B00FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer.PrayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer.app/Prayer";
+			};
+			name = Debug;
+		};
+		E2DFA92D1D37575800B00FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer.PrayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer.app/Prayer";
+			};
+			name = Release;
+		};
+		E2DFA92F1D37575800B00FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PrayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer.PrayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Prayer;
+			};
+			name = Debug;
+		};
+		E2DFA9301D37575800B00FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PrayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessup.prayer.PrayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Prayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2DFA8F91D37575700B00FA5 /* Build configuration list for PBXProject "Prayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DFA9261D37575800B00FA5 /* Debug */,
+				E2DFA9271D37575800B00FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DFA9281D37575800B00FA5 /* Build configuration list for PBXNativeTarget "Prayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DFA9291D37575800B00FA5 /* Debug */,
+				E2DFA92A1D37575800B00FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DFA92B1D37575800B00FA5 /* Build configuration list for PBXNativeTarget "PrayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DFA92C1D37575800B00FA5 /* Debug */,
+				E2DFA92D1D37575800B00FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DFA92E1D37575800B00FA5 /* Build configuration list for PBXNativeTarget "PrayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DFA92F1D37575800B00FA5 /* Debug */,
+				E2DFA9301D37575800B00FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2DFA8F61D37575700B00FA5 /* Project object */;
+}
